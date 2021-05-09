@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #9fa3af;
+}
+#container {
+  width: 50%;
+  margin: 100px auto;
+  background: #e6e6ec;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+h1 {
+  background: #51545d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+}
+.fa-plus {
+  margin-left: 5px;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px #51545d;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.fa-plus:hover {
+  transform: scale(1.15);
+}
+input[type='text'] {
+  display: inline-block;
+  width: 90%;
+  font-size: 18px;
+  color: rgb(20, 18, 18);
+  background-color: #f7f7f7;
+  padding: 13px 13px 13px 20px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  padding: 0.5rem;
+  outline: none;
+}
+input[type='text']::placeholder {
+  font-size: 1rem;
+  color: #51545d;
+}
+li {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  padding: 0 10px;
+  text-transform: capitalize;
+  margin: 10px;
+  border-radius: 15px;
+}
+li p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.remove {
+  float: right;
+  height: 40px;
+  text-align: center;
+  color: #666;
+  transition: 0.3s linear;
+  cursor: pointer;
+  font-size: 1.3rem;
+  opacity: 0;
+}
+li:hover .remove {
+  opacity: 1;
+}
+
+.completed {
+  color: rgb(206, 204, 204);
+}
