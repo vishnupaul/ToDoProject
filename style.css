@@ -39,12 +39,9 @@ ul {
   padding: 1rem;
 }
 .add {
-  transition: 0.3s linear;
   padding-left: 1rem;
 }
-.add:hover {
-  transform: scale(1.15);
-}
+
 .add-btn {
   outline: none;
   border: none;
@@ -55,6 +52,20 @@ ul {
   box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
   transition: 0.5s;
   padding: 0.5rem 1rem;
+  animation-name: blink;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1.15);
+  }
 }
 input[type='text'] {
   border: none;
