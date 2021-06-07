@@ -51,6 +51,9 @@ function deleteItem(e) {
   tasks.removeChild(element);
   todos.pop();
   count();
+  if (todos.length == 0) {
+    clearBtn.classList.remove('show-clrbtn');
+  }
 }
 
 // checked a task
